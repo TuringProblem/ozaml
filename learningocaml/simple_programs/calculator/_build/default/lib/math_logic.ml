@@ -13,9 +13,9 @@ let divide (x: int) (y: int) = if y == 0 then failwith "Not divisible by 0" else
 
 let calculate (x: int) (y: int) (op: string): int =
   match op with
-    | "add" -> add x y
-    | "subtract" -> sub x y
-    | "multiply" -> mult x y
-    | "divide" -> divide x y
+    | "add" | "Add" -> add x y
+    | "subtract" | "sub" -> sub x y
+    | "multiply" | "mult" -> mult x y
+    | "divide" | "div" -> divide x y
     | _ -> failwith "Please enter an operation"
 
