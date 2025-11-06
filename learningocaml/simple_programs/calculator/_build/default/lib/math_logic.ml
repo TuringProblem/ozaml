@@ -5,10 +5,10 @@
 *)
 
 (*Operations*)
-let add x y = x + y
-let sub x y = x - y
-let mult x y = x * y
-let divide x y = if y == 0 then failwith "Not divisible by 0" else x / y
+let add (x: int) (y: int) = x + y
+let sub (x: int) (y: int) = x - y
+let mult (x: int) (y: int) = x * y
+let divide (x: int) (y: int) = if y == 0 then failwith "Not divisible by 0" else x / y
 
 
 
